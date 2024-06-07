@@ -30,14 +30,6 @@ const routes = [
     ]
   },
   {
-    path: '/inventory/modify',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/InventoryModifyPage.vue') },
-    ]
-  },
-
-  {
     path: '/users',
     component: () => import('layouts/MainLayout.vue'),
     children: [
@@ -56,13 +48,6 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/UserDeletePage.vue') },
-    ]
-  },
-  {
-    path: '/users/modify',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/UserModifyPage.vue') },
     ]
   },
 
